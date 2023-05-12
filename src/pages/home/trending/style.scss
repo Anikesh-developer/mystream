@@ -1,0 +1,18 @@
+.trending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pageTitle {
+    #trend {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: bolder;
+        background-image: linear-gradient(98.37deg, #f89e00 0.99%, #da2f68 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 2rem;
+    }
+}

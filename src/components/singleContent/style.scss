@@ -1,0 +1,32 @@
+.media {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    margin: 1rem;
+    transition: 1s;
+    width: 20vw;
+}
+.media:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+.poster {
+    width:100%;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.title{
+    color: white;
+    padding:5px 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+.subtitle{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
