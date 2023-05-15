@@ -1,7 +1,7 @@
-import { createTheme, Pagination, ThemeProvider} from '@mui/material'
-import React from 'react'
+import { createTheme, Pagination, ThemeProvider} from '@mui/material';
+import React from 'react';
 
-const CustomPagination = ({setPage , numofPages = 10 }) => {
+const CustomPagination = ({setpage , numofPages = 10 }) => {
 
     const darkTheme = createTheme({
         palette:{
@@ -10,7 +10,7 @@ const CustomPagination = ({setPage , numofPages = 10 }) => {
     });
 
     const handlePageChange = (page) => {
-        setPage(page);
+        setpage(page)
         window.scroll(0,0);
     }
 

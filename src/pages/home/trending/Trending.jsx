@@ -31,7 +31,7 @@ const Trending = () => {
           content && content.map((c) => <SingleContent key={c.id} id={c.id} poster={c.poster_path} title={c.title || c.name} date={c.first_air_date || c.release_date} media_type={c.media_type} vote={c.vote_average}/>)
         }
       </div>
-      <CustomPagination setPage={setPage} />
+      <CustomPagination setpage={setPage} />
     </div>
   )
 }

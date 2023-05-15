@@ -3,7 +3,7 @@ import {BrowserRouter , Route , Routes} from 'react-router-dom';
 import {fetchDataFromApi} from './utils/api';
 import { useSelector, useDispatch } from 'react-redux';
 import {getApiConfiguration} from './store/homeSlice';
-import {Pagenotfound , Explore , Home , Search , Details} from './pages';
+import {Movie , Home , Search , Details, TV} from './pages';
 import {Footer , Header} from  './components';
 
 function App() {
@@ -42,8 +42,8 @@ function App() {
       <Route path="/" element={<Home />} ></Route>
       <Route path="/:mediaType/:id" element={<Details />} ></Route>
       <Route path="/search/:query" element={<Search />} />
-      <Route path="/explore/:mediaType" element={<Explore />} />
-      <Route path="*" element={<Pagenotfound />} />
+      <Route path="/movie" element={<Movie />} />
+      <Route path="/tv" element={<TV />} />
     </Routes>
     <Footer />
     </BrowserRouter>
