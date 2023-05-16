@@ -30,7 +30,7 @@ const TV = () => {
         },[page, genreforurl])
 
   return (
-    <div className='pageTitle'><h1>TV Shows</h1>
+    <div className='pageTitle-1'><h1>TV Shows</h1>
     <Genres type="tv" selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres} genres={genres} setGenres={setGenres} setpage={setPage}/>
         <div className='tvshow'>
         {
