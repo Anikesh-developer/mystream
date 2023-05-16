@@ -3,10 +3,10 @@ import { HiOutlineSearch } from "react-icons/hi";
 import { SlMenu } from "react-icons/sl";
 import { VscChromeClose } from "react-icons/vsc";
 import { useNavigate, useLocation } from "react-router-dom";
-
 import "./style.scss";
 import logo from '../../assets/logo.png';
 import Contentwrapper from "../contentwrapper/Contentwrapper";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [show, setShow] = useState("top");
@@ -75,8 +75,8 @@ const Header = () => {
         <header className={`header ${mobileMenu ? 'mobileView': ""} ${show}`}>
           <Contentwrapper>
             <div className="logo">
-              <img src={logo} alt="" ></img>
-              <h1 className="text">My Stream</h1>
+              <img src={logo} alt=""></img>
+              <h1 className="text"><Link to="/">My Stream</Link></h1>
             </div>
             <ul className="menuItems">
               <li className="menuItem" id="movie" onClick={() => navigationHandler("movie")}>Movies</li>
