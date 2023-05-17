@@ -164,3 +164,9 @@
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width:400px) {
+    .text {
+        font-size: 23px;
+    }
+}

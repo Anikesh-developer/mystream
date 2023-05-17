@@ -99,4 +99,17 @@
             }
         }
     }
-} 
+}
+
+@media screen and (max-width:400px) {
+    .herobanner {
+        height: 350px;
+    }
+    .herobanner .home__content .title {
+        font-size: 30px;
+    }
+    .herobanner .home__content .subtitle {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}

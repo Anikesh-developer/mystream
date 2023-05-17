@@ -30,3 +30,34 @@
     align-items: center;
     font-size: 12px;
 }
+@media screen and (max-width:660px) {
+    .media {
+        width: 30vw;
+    }
+    .title {
+        font-size: 10px;
+    }
+    .subtitle {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    .media {
+        width: 35vw;
+    }
+    .title {
+        padding: 2px 0;
+        font-weight: 200;
+    }
+}
+@media screen and (max-width:300px) {
+    .media {
+        width: 100vw;
+    }
+    .title {
+        font-size: 12px;
+    }
+    .subtitle {
+        font-size: 12px;
+    }
+}
