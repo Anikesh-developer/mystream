@@ -38,7 +38,7 @@ const Movie = () => {
     <Genres type="movie" selectedGenres={selectedGenres} setSelectedGenres={setSelectedGenres} genres={genres} setGenres={setGenres} setpage={setPage}/>
       <div className='movies'>
         {
-          content && content.map((c) => <SingleContent key={c.id} id={c.id} poster={c.poster_path} title={c.title || c.name} date={c.first_air_date || c.release_date} media_type="movie" vote={c.vote_average}/>)
+          content && content?.map((c) => <SingleContent key={c.id} id={c.id} poster={c.poster_path} title={c.title || c.name} date={c.first_air_date || c.release_date} media_type="movie" vote={c.vote_average}/>)
         }
       </div>
       <CustomPagination setpage={setPage} numofPages={numofPages} />

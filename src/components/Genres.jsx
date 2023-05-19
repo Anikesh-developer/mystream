@@ -34,7 +34,7 @@ const Genres = ({selectedGenres , setSelectedGenres , genres , setGenres , setpa
     },[])
 
   return (
-    <div style={{padding : "1rem 0"}}>
+    <div style={{padding : "1rem 1rem"}}>
         {selectedGenres && selectedGenres.map((genre) => (
             <Chip label={genre.name} style={{margin : 3  }} color="success" background = "white" size="small" key={genre.id} clickable onDelete={() => handleRemove(genre)} />
         ))}

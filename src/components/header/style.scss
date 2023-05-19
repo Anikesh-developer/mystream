@@ -165,8 +165,16 @@
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
+    .header {
+        height: 50px;
+    }
     .text {
-        font-size: 23px;
+        font-size: 22px;
+    }
+    .header .logo {
+        img {
+            height:40px ;
+        }
     }
 }

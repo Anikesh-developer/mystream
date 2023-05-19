@@ -20,3 +20,18 @@
         margin-bottom: 2rem;
     }
 }
+@media screen and (max-width:600px) {
+    .pageTitle {
+        #trend {
+            font-size: 35px;
+        }
+    }
+}
+@media screen and (max-width:400px) {
+    .pageTitle {
+        #trend{
+            font-size: 25px;
+            margin-bottom: 1rem;
+        }
+    }
+}

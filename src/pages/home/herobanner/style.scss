@@ -100,7 +100,14 @@
         }
     }
 }
-
+@media screen and (max-width:600px) {
+    .herobanner .home__content .search input {
+        height: 40px;
+    }
+    .herobanner .home__content .search button {
+        height: 40px;
+    }
+}
 @media screen and (max-width:400px) {
     .herobanner {
         height: 350px;

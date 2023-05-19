@@ -1,5 +1,4 @@
 .pageTitle {
-    padding-top: 5rem;
     h1 {
         display: flex;
         justify-content: center;
@@ -9,6 +8,7 @@
         -webkit-text-fill-color: transparent;
         font-size: 40px;
         font-weight: bolder;
+        padding-top: 5rem;
     }
 }
 .movies {

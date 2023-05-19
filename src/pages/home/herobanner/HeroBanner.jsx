@@ -7,7 +7,7 @@ import Img from '../../../components/lazyloadimage/Img';
 import Contentwrapper from '../../../components/contentwrapper/Contentwrapper';
 
 const HeroBanner = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [background ,setBackground] = useState('');
   const [query , setQuery] = useState('');
   const {url} = useSelector((state) => state.home);

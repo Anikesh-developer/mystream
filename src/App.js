@@ -40,7 +40,7 @@ function App() {
     <Header />
     <Routes>
       <Route path="/" element={<Home />} ></Route>
-      <Route path="/:mediaType/:id" element={<Details />} ></Route>
+      <Route path="/:media_type/:id" element={<Details />} ></Route>
       <Route path="/search/:query" element={<Search />} />
       <Route path="/movie" element={<Movie />} />
       <Route path="/tv" element={<TV />} />
