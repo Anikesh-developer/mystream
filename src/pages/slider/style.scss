@@ -1,0 +1,35 @@
+.carouselItem {
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.carouselItem__img{
+    border-radius: 10px;
+    margin-bottom: 5px;
+    width: 10vw;
+}
+.carouselItem__txt{
+    padding-top: 10px;
+    color: #da2f68;
+    font-weight: 700;
+}
+.alice-carousel{
+    width: 55vw;
+}
+.alice-carousel__stage-item{
+    margin: 2rem;
+}
+@media screen and (max-width:765px) {
+    .alice-carousel {
+        width: 85vw;
+    }
+    .carouselItem__txt {
+        font-size: 12px;
+    }
+    .carouselItem__img{
+        width: 15vw;
+    }
+}
