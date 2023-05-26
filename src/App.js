@@ -39,11 +39,11 @@ function App() {
     <BrowserRouter>
     <Header />
     <Routes>
-      <Route path="/" element={<Home />} ></Route>
-      <Route path="/:media_type/:id" element={<Details />} ></Route>
-      <Route path="/search/:query" element={<Search />} />
-      <Route path="/movie" element={<Movie />} />
-      <Route path="/tv" element={<TV />} />
+      <Route path="/mystream" element={<Home />} ></Route>
+      <Route path="/mystream:media_type/:id" element={<Details />} ></Route>
+      <Route path="/mystream/search/:query" element={<Search />} />
+      <Route path="/mystream/movie" element={<Movie />} />
+      <Route path="/mystream/tv" element={<TV />} />
     </Routes>
     <Footer />
     </BrowserRouter>
