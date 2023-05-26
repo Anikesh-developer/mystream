@@ -14,7 +14,7 @@ const SingleContent = ({id , poster , title , date , media_type , vote}) => {
     const rate = parseFloat(vote).toFixed(1);
 
     return (
-        <div className='media' onClick={(() => navigate(`/mystream/${media_type}/${id}`))}>
+        <div className='media' onClick={(() => navigate(`${media_type}/${id}`))}>
             <Badge badgeContent={rate} color={rate > 7 ? "primary" : "secondary"}/>
             <img className='poster' src={poster ? `${img_300}/${poster}` : unavailable} alt={title}></img>
             <b className='title'> {title} </b>

@@ -76,7 +76,7 @@ const Header = () => {
           <Contentwrapper>
             <div className="logo">
               <img src={logo} alt=""></img>
-              <h1 className="text"><Link to="/">My Stream</Link></h1>
+              <h1 className="text"><Link to="/mystream">My Stream</Link></h1>
             </div>
             <ul className="menuItems">
               <li className="menuItem" id="movie" onClick={() => navigationHandler("movie")}>Movies</li>

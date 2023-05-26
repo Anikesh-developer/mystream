@@ -40,8 +40,8 @@ function App() {
     <Header />
     <Routes>
       <Route path="/mystream" element={<Home />} ></Route>
-      <Route path="/mystream:media_type/:id" element={<Details />} ></Route>
-      <Route path="/mystream/search/:query" element={<Search />} />
+      <Route path="/:media_type/:id" element={<Details />} ></Route>
+      <Route path="/search/:query" element={<Search />} />
       <Route path="/mystream/movie" element={<Movie />} />
       <Route path="/mystream/tv" element={<TV />} />
     </Routes>
