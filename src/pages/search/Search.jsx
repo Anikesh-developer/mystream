@@ -17,7 +17,7 @@ const Search = () => {
 
   const fetchInitialData = () => {
     setLoading(true)
-    fetchDataFromApi(`/search/multi?query=${query}&page=${pagenum}`).then ((res)=> {
+    fetchDataFromApi(`/mystream/search/multi?query=${query}&page=${pagenum}`).then ((res)=> {
       setData(res)
       setPageNum((prev) => prev + 1)
       setLoading(false)
@@ -27,7 +27,7 @@ const Search = () => {
   // in the below code we are merging the previous data and new page data , in this case previous data can be data from page 1,2,3 etc and we are merging it with next page data i.e. 2,3,4 respectivily .
 
   const fetchNextPageData = () => {
-    fetchDataFromApi (`/search/multi?query=${query}&page=${pagenum}`).then((res) => {
+    fetchDataFromApi (`/mystream/search/multi?query=${query}&page=${pagenum}`).then((res) => {
       if (data?.results) {
         setData({
           ...data,results : [...data?.results,...res.results]
