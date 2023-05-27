@@ -83,7 +83,7 @@
                 display: none;
             }
             .poster-landscape {
-                margin-top: 3.5rem;
+                margin-top: 3rem;
                 display: flex;
             }
             .content_about {
@@ -108,9 +108,12 @@
         } 
     }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     .details{
         .poster{
+            .poster-landscape {
+                margin-top: 2.5rem;
+            }
             .content_about{
                 .content_title{
                     font-size: 15px;
