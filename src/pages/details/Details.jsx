@@ -38,31 +38,31 @@ function Details() {
 
   return (
     <div className='details'>
-      {content && (
-        <div className='poster'>
-          <img className="poster_portrait" alt={content.name || content.title} src={content.poster_path ? `${img_500}/${content.poster_path}` : unavailable} />
-          <img className='poster-landscape' alt={content.name || content.title} src={content.backdrop_path?`${img_500}/${content.backdrop_path}` : unavailableLandscape} />
-          <div className="content_about">
-            <span className='content_title'>
-              {content.name || content.title} (
-              {(
-                content.first_air_date || dayjs(content.release_date).format("MMM D, YYYY") || "_ _ _ _"
-              )}
-              )
-            </span>
-            <div className="tagline">{content.tagline}</div>
-            <div className='overview'>
-              {content.overview}
+        {content && (
+          <div className='poster'>
+            <img className="poster_portrait" alt={content.name || content.title} src={content.poster_path ? `${img_500}/${content.poster_path}` : unavailable} />
+            <img className='poster-landscape' alt={content.name || content.title} src={content.backdrop_path?`${img_500}/${content.backdrop_path}` : unavailableLandscape} />
+            <div className="content_about">
+              <span className='content_title'>
+                {content.name || content.title} (
+                {(
+                  content.first_air_date || dayjs(content.release_date).format("MMM D, YYYY") || "_ _ _ _"
+                )}
+                )
+              </span>
+              <div className="tagline">{content.tagline}</div>
+              <div className='overview'>
+                {content.overview}
+              </div>
+              <br></br>
+              <span className='rating'>
+                {parseFloat(content.vote_average).toFixed(1)}
+                <Button variant="contained" starticon={<YouTubePlayer />} target="blank" href={`https://www.youtube.com/watch?v=${video}`}>Watch The Tralier</Button>
+              </span>
+              <Slider media_type={media_type} id={id}/>
             </div>
-            <br></br>
-            <span className='rating'>
-              {parseFloat(content.vote_average).toFixed(1)}
-              <Button variant="contained" starticon={<YouTubePlayer />} target="blank" href={`https://www.youtube.com/watch?v=${video}`}>Watch The Tralier</Button>
-            </span>
-            <Slider media_type={media_type} id={id}/>
           </div>
-        </div>
-      )}
+        )}
     </div>
   );
 }
