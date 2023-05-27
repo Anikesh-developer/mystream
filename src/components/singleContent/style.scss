@@ -6,7 +6,7 @@
     padding: 1rem;
     margin: 1rem;
     transition: 1s;
-    width: 20vw;
+    width: 22vw;
 }
 .media:hover {
     transform: scale(1.2);
@@ -29,20 +29,25 @@
     align-items: center;
     font-size: 12px;
 }
-@media screen and (max-width:660px) {
+@media screen and (max-width:720px) {
     .media {
-        width: 30vw;
-    }
-    .title {
-        font-size: 10px;
+        width: 50wv;
     }
     .subtitle {
         font-size: 10px;
     }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:660px) {
     .media {
         width: 35vw;
+    }
+    .title {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:500px) {
+    .media {
+        width: 40vw;
     }
     .title {
         padding: 2px 0;
