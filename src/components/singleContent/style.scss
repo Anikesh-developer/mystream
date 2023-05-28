@@ -29,39 +29,42 @@
     align-items: center;
     font-size: 12px;
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width:1050px) {
     .media {
-        width: 50wv;
-    }
-    .subtitle {
-        font-size: 10px;
-    }
-}
-@media screen and (max-width:660px) {
-    .media {
-        width: 35vw;
+        width: 28vw;
     }
     .title {
         font-size: 15px;
     }
+    .subtitle {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:660px) {
+    .media {
+        width: 40vw;
+        margin: 0;
+    }
 }
 @media screen and (max-width:500px) {
     .media {
-        width: 38vw;
+        width: 40vw;
     }
     .title {
         padding: 5px 0;
         font-weight:600;
     }
-}
-@media screen and (max-width:300px) {
-    .media {
-        width: 100vw;
-    }
-    .title {
-        font-size: 12px;
-    }
     .subtitle {
         font-size: 12px;
+    }
+}
+@media screen and (max-width:350px) {
+    .media {
+        width: 50vw;
+    }
+}
+@media screen and (max-width:250px) {
+    .media {
+        width: 100vw;
     }
 }
