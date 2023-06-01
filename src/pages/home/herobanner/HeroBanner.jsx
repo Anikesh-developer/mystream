@@ -27,6 +27,12 @@ const HeroBanner = () => {
     }
   }
 
+  const searchOnClick = () => {
+    if (query.length > 0){
+      navigate(`/search/${query}`)
+    }
+  }
+
   return (
     <div className='herobanner'>
       <div style={{height : 1000}}></div>
@@ -42,7 +48,7 @@ const HeroBanner = () => {
           <span className='subtitle'>Stream millions of Movies and TV shows .<br></br>Explore Now</span>
           <div className='search'>
             <input type='text' placeholder='Search for a movie or Tv Show....' onChange={(e) => setQuery(e.target.value)} onKeyUp={searchQueryHandler} />
-            <button>Search</button>
+            <button onClick={searchOnClick}>Search</button>
           </div>
         </div>
       </Contentwrapper>
